@@ -1,22 +1,22 @@
 
-function reverse(originalArray) {
+function reverseArrayA(A) {
 
   let leftIndex = 0;
-  let rightIndex = originalArray.length - 1;
+  let rightIndex = A.length - 1;
 
   while (leftIndex < rightIndex) {
 
   
-    let temp = originalArray[leftIndex];
-    originalArray[leftIndex] = originalArray[rightIndex];
-    originalArray[rightIndex] = temp;
+    let temp = A[leftIndex];
+    A[leftIndex] = A[rightIndex];
+    A[rightIndex] = temp;
 
     // Move indices to the middle
     leftIndex++;
     rightIndex--;
   }
 }
-let myArray = [10,5,6,9];
-reverse(myArray);
+let A = [10,5,6,9];
+reverseArrayA(A);
 
-console.log(myArray);
+console.log(A);
